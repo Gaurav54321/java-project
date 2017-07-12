@@ -100,6 +100,7 @@ pipeline{
         }
       }
     }
+  }
       post {
         failure {
           emailext(
@@ -109,7 +110,6 @@ pipeline{
             to: "cityrocker.101@gmail.com"
             )
         }
-      }
     }
   }
 }
